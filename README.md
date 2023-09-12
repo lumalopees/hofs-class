@@ -1,4 +1,4 @@
-# Boas-vindas ao repositório do exercícios do aulão de HOFs!
+# Boas-vindas ao repositório do exercícios do aulão de HOFs!!!
 Este projeto foi desenvolvido por Aysllan Ferreira, enquanto estudante na Trybe para servir como material de apoio para as pessoas estudantes se prepararem para o projeto Zoo Functions.
 
 # Orientações
