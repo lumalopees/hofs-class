@@ -1,3 +1,5 @@
+const { log } = require("console");
+
 /* eslint-disable no-console */
 const pessoas = [
   {
@@ -28,6 +30,10 @@ const pessoas = [
 
 const mulheres = () => {
   // Seu codigo aqui...
+  const womans = pessoas.filter((elemento) => elemento.sexo === 'F')
+  return womans;
 };
+
+console.log(mulheres());
 
 module.exports = mulheres;
