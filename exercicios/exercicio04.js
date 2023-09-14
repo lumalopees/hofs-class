@@ -39,7 +39,14 @@ console.log(pessoaMaisVelha());
 
 const pessoaMaisNova = () => {
   // Seu codigo aqui...
+  const pessoasx = pessoas.reduce((acumulador, valorAtual) => {
+    if (acumulador.idade < valorAtual.idade) return acumulador;
+    return valorAtual;
+  })
+  return pessoasx;
 };
+
+console.log(pessoaMaisNova());
 
 module.exports = {
   pessoaMaisVelha,
