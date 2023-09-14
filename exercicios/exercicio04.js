@@ -28,7 +28,14 @@ const pessoas = [
 
 const pessoaMaisVelha = () => {
   // Seu codigo aqui...
+  const idades = pessoas.reduce((acumulador, valorAtual) => {
+    if (acumulador.idade > valorAtual.idade) return acumulador;
+    return valorAtual;
+  })
+  return idades;
 };
+
+console.log(pessoaMaisVelha());
 
 const pessoaMaisNova = () => {
   // Seu codigo aqui...
