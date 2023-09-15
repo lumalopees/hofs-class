@@ -35,7 +35,7 @@ const pessoaMaisVelha = () => {
   return idades;
 };
 
-console.log(pessoaMaisVelha());
+// console.log(pessoaMaisVelha());
 
 const pessoaMaisNova = () => {
   // Seu codigo aqui...
