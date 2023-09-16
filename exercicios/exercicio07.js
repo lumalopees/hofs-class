@@ -26,6 +26,8 @@ const objeto = {
 
 const primeiroAnimalEncontrado = () => {
   // Seu codigo aqui...
+  const encontra =
+  return encontra;
 };
 
 module.exports = primeiroAnimalEncontrado;
