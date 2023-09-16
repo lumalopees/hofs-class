@@ -24,16 +24,13 @@ const objeto = {
   ],
 };
 
-const { funcionarios } = objeto;
-
 const encontrarPessoa = (...parametros) => {
-  const pessoas = funcionarios
-    .filter(({ id, nome, sobrenome }) => parametros.includes(id) || parametros
-      .includes(nome) || parametros.includes(sobrenome));
-  return pessoas.map(({ nome, sobrenome }) => `Nome: ${nome} ${sobrenome}`);
+  // Seu codigo aqui...
+  const encontre = objeto.funcionarios
+    .filter((pessoas) => parametros.includes(pessoas.id) || parametros.includes(pessoas.nome) || parametros.includes(pessoas.sobrenome));
+  return encontre;
 };
 
-
-console.log(encontrarPessoa(2, 'Mariana', 'Ferreira'));
+console.log(encontrarPessoa(1, 'Antonio', 'Almeida'));
 
 module.exports = encontrarPessoa;
