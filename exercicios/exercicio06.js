@@ -24,8 +24,16 @@ const objeto = {
   ],
 };
 
-const nomesDoguinhos = () => {
-  // Seu codigo aqui...
-};
+const { doguinhos } = objeto;
 
-module.exports = { nomesDoguinhos, nomesDoguinhos2 };
+// Nome: cachorrinho Idade: X
+
+const nomesDoguinhos = () => {
+  const doguinhox = objeto.doguinhos.sort((a, b) => b.idade - a.idade)
+    .map((elemento) => `Nome: ${elemento.nome},Idade: ${elemento.idade}`)
+    return doguinhox;
+}
+
+console.log(nomesDoguinhos());
+
+module.exports = { nomesDoguinhos };
