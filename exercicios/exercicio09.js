@@ -26,6 +26,11 @@ const objeto = {
 
 const encontrarPessoa = (nome) => {
   // Seu codigo aqui...
+  const encontrarPessoa = objeto.funcionarios
+    .filter((pessoa) => pessoa.nome === nome || pessoa.sobrenome === nome)
+  return encontrarPessoa;
 };
+
+console.log(encontrarPessoa('Souza'));
 
 module.exports = encontrarPessoa;
