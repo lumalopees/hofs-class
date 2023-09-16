@@ -33,4 +33,8 @@ const encontrarPessoa = (nome) => {
 
 console.log(encontrarPessoa('Souza'));
 
+// .filter = retorna todos que achar com o parâmetro
+// .find = retorna apenas o primeiro que encontrar
+// .find = é talvez o único que retorna o OBJETO, não um array
+
 module.exports = encontrarPessoa;

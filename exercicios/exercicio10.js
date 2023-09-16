@@ -24,8 +24,12 @@ const objeto = {
   ],
 };
 
-const encontrarPessoa = (parametros) => {
+const encontrarPessoa = (... parametros) => {
   // Seu codigo aqui...
+  const encontre =
+  return encontre;
 };
+
+console.log(encontrarPessoa());
 
 module.exports = encontrarPessoa;
