@@ -29,7 +29,7 @@ const { doguinhos } = objeto;
 // Nome: cachorrinho Idade: X
 
 const nomesDoguinhos = () => {
-  const doguinhox = objeto.doguinhos.sort((a, b) => b.idade - a.idade)
+  const doguinhox = doguinhos.sort((a, b) => b.idade - a.idade)
     .map((elemento) => `Nome: ${elemento.nome},Idade: ${elemento.idade}`)
     return doguinhox;
 }
