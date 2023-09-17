@@ -24,12 +24,11 @@ const objeto = {
   ],
 };
 
-const primeiroAnimalEncontrado = () => {
-  // Seu codigo aqui...
-  const encontra = objeto.doguinhos.filter((elemento) => elemento.idade > 5)
-    .find((elemento2) => elemento2).raca;
-  return encontra;
-};
+const { doguinhos } = objeto
+
+const primeiroAnimalEncontrado = () => doguinhos.filter(({ idade }) => idade > 5)
+    .find((elemento) => elemento).raca;
+
 
 console.log(primeiroAnimalEncontrado());
 

@@ -24,12 +24,9 @@ const objeto = {
   ],
 };
 
-const encontrarPessoa = (...parametros) => {
-  // Seu codigo aqui...
-  const encontre = objeto.funcionarios
-    .filter((pessoas) => parametros.includes(pessoas.id) || parametros.includes(pessoas.nome) || parametros.includes(pessoas.sobrenome));
-  return encontre;
-};
+const { funcionarios } = objeto;
+
+const encontrarPessoa = (...parametros) => funcionarios.filter(({ id, nome, sobrenome }) => parametros.includes(id) || parametros.includes(nome) || parametros.includes(sobrenome));
 
 console.log(encontrarPessoa(1, 'Antonio', 'Almeida'));
 

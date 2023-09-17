@@ -14,7 +14,7 @@ const objeto = {
     {
       id: 3,
       nome: 'Antonio',
-      sobrenome: 'Ferreira',
+      sobrenome: 'Souza',
     },
     {
       id: 4,
@@ -24,12 +24,10 @@ const objeto = {
   ],
 };
 
-const encontrarPessoa = (nome) => {
-  // Seu codigo aqui...
-  const encontrarPessoa = objeto.funcionarios
-    .filter((pessoa) => pessoa.nome === nome || pessoa.sobrenome === nome)
-  return encontrarPessoa;
-};
+const { funcionarios } = objeto;
+
+const encontrarPessoa = (nomes) => funcionarios
+  .filter(({ nome, sobrenome }) => nome === nomes || sobrenome === nomes).map(({ nome, sobrenome }) => `Nome: ${nome} ${sobrenome}`);
 
 console.log(encontrarPessoa('Souza'));
 
