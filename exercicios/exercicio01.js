@@ -26,11 +26,7 @@ const pessoas = [
   },
 ];
 
-const emails = () => {
-  // Seu codigo aqui...
-  const people = pessoas.map((elemento) => `${elemento.nome.toLowerCase()}.${elemento.sobrenome.toLowerCase()}@aulao.com`)
-  return people;
-};
+const emails = () => pessoas.map((elemento) => `${elemento.nome.toLowerCase()}.${elemento.sobrenome.toLowerCase()}@aulao.com`)
 
 console.log(emails());
 
